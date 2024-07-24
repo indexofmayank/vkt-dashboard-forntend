@@ -37,6 +37,7 @@ export default function LoginPage() {
     }
     setLoading(true);
     const response = await login(email, password);
+    console.log( response);
     if (mounted.current) {
       setLoading(false);
     }
